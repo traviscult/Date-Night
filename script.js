@@ -53,7 +53,7 @@ $(document).ready(function () {
       //api returns an array of drinks based on selected alcohol, this parses out that length.
       let drinkLenght = response.drinks.length;
       //assigns a random number from 1-length of the returned array.
-      let randomNumber = Math.floor(Math.random() * (drinkLenght + 1));
+      let randomNumber = Math.floor(Math.random() * (drinkLenght));
 
       //This returns the ID of a drink based on the position of the array it is in.
       let drinkID = response.drinks[randomNumber].idDrink;
@@ -182,12 +182,12 @@ $(document).ready(function () {
       method: "GET",
     }).then(function (response) {
       console.log(response);
-      //Empties out current recipie if one already exits
+      //Empties out current recipe if one already exits
       $("#meal-recipie").empty();
       //api returns an array of meals based on selected cusinie region, this parses out that length.
       var foodArrayLength = response.meals.length;
       //assigns a random number from 1-length of the returned array.
-      var mathRandomNumber = Math.floor(Math.random() * (foodArrayLength + 1));
+      var mathRandomNumber = Math.floor(Math.random() * (foodArrayLength));
       //This returns the ID of a drink based on the position of the array it is in.
       var foodID = response.meals[mathRandomNumber].idMeal;
       console.log(foodID);
@@ -271,11 +271,11 @@ $(document).ready(function () {
 
         let mealLinkHeader = $("<p>")
           .addClass("meal-link")
-          .text("Recipie Link: ");
+          
         let mealLink = $("<a>")
           .attr("href", response.meals[0].strSource)
           .attr("target", "_blank")
-          .text(response.meals[0].strSource);
+          .text("Click here for a linked recipe!");
 
         let row = $("<div>").addClass("row");
         let columnOne = $("<div>").addClass("col s6");
