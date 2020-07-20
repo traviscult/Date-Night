@@ -12,7 +12,10 @@ The website will give you a completed picture of what the meal and drink should 
 
 
 # Code
-The Date Night application was developed using HTML5, CSS, Javascript, JQuery, Materialize the deployed application can be found on git hub https://github.com/traviscult/Date-Night or https://traviscult.github.io/Date-Night/
+The Date Night application was developed using HTML5, CSS, Javascript, JQuery, Materialize the deployed application can be found on git hub https://github.com/traviscult/Date-Night 
+
+# Deployed Application
+https://traviscult.github.io/Date-Night/
 
 
 # Contributors
